@@ -2,36 +2,140 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad - Albion Multi App</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
-    h1 { color: #333; }
-    h2 { color: #555; margin-top: 30px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+    h1 { color: #222; border-bottom: 2px solid #c9a961; padding-bottom: 10px; }
+    h2 { color: #555; margin-top: 35px; }
+    h3 { color: #666; margin-top: 20px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #b08c3f; }
+    .last-updated { color: #888; font-style: italic; }
+    .contact-box {
+      background: #fdf8ec;
+      border-left: 4px solid #c9a961;
+      padding: 15px 20px;
+      margin: 20px 0;
+    }
+    .disclaimer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 13px;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <h1>Política de Privacidad</h1>
-  <p>Última actualización: Marzo 2026</p>
+  <p class="last-updated">Última actualización: Abril 2026</p>
+
+  <p>Esta Política de Privacidad describe cómo <strong>Albion Multi App</strong> (en adelante, "la App"), desarrollada por Eduardo Barrera Veloso bajo la identidad de desarrollador <strong>Vectors</strong>, recopila, utiliza y protege la información de sus usuarios. Al usar la App, aceptas las prácticas descritas en este documento.</p>
 
   <h2>1. Información que recopilamos</h2>
-  <p>Recopilamos nombre de usuario y correo electrónico cuando te registras en la app.</p>
 
-  <h2>2. Uso de la información</h2>
-  <p>Usamos tu información para gestionar tu cuenta, enviarte notificaciones del servicio y mejorar la experiencia de uso.</p>
+  <h3>1.1. Información que nos proporcionas directamente</h3>
+  <p>Cuando creas una cuenta en la App, recopilamos:</p>
+  <ul>
+    <li><strong>Dirección de correo electrónico</strong>: usada como identificador de tu cuenta.</li>
+    <li><strong>Contraseña</strong>: almacenada en nuestro backend de forma cifrada (hash), nunca en texto plano.</li>
+    <li><strong>Nombre de usuario</strong>: un alias elegido por ti (no requiere ser tu nombre real).</li>
+  </ul>
+  <p>La creación de cuenta es <strong>opcional</strong>. Puedes usar las funciones principales de la App (Comparador de precios y Calculadora de refinamiento) en modo invitado, sin proporcionarnos ninguna información personal.</p>
 
-  <h2>3. Anuncios</h2>
-  <p>Utilizamos Google AdMob para mostrar anuncios. AdMob puede recopilar datos del dispositivo para personalizar anuncios según sus propias políticas de privacidad.</p>
+  <h3>1.2. Información recopilada automáticamente</h3>
+  <p>Al usar la App, se recopila automáticamente la siguiente información:</p>
+  <ul>
+    <li><strong>Identificador del dispositivo</strong>: en iOS, el IDFA (Identifier for Advertisers); en Android, el Advertising ID. Utilizados por Google AdMob para mostrar anuncios.</li>
+    <li><strong>Identificador de usuario interno</strong>: un ID único generado por nuestro backend para asociar tu cuenta con tu estado de suscripción.</li>
+    <li><strong>Datos de interacción con anuncios</strong>: qué anuncios se muestran, cuáles se tocan, duración de visualización (manejado por Google AdMob).</li>
+    <li><strong>Datos de interacción con la App</strong>: qué funciones usas y con qué frecuencia, utilizados para análisis interno y mejora de la App.</li>
+    <li><strong>Datos de fallos y rendimiento</strong>: reportes técnicos generados automáticamente cuando la App presenta errores o fallos, usados exclusivamente para diagnóstico y mejora técnica.</li>
+    <li><strong>Historial de compras</strong>: registro de tu estado de suscripción Premium (activa/inactiva), gestionado a través de RevenueCat.</li>
+  </ul>
 
-  <h2>4. Suscripciones</h2>
-  <p>Ofrecemos suscripciones premium gestionadas a través de Google Play. Los pagos son procesados directamente por Google.</p>
+  <h2>2. Cómo usamos tu información</h2>
+  <p>Usamos la información recopilada para:</p>
+  <ul>
+    <li>Autenticar tu cuenta y permitirte iniciar sesión.</li>
+    <li>Gestionar tu suscripción Premium y verificar su estado.</li>
+    <li>Mostrar anuncios relevantes dentro de la App (usuarios gratuitos).</li>
+    <li>Respetar los límites de uso del modelo freemium (por ejemplo, 1 uso diario de la Calculadora de refinamiento para usuarios gratuitos).</li>
+    <li>Diagnosticar y corregir errores técnicos.</li>
+    <li>Mejorar la App analizando patrones de uso agregados.</li>
+    <li>Contactarte únicamente si solicitas soporte.</li>
+  </ul>
+  <p>No enviamos correos comerciales ni notificaciones de marketing.</p>
 
-  <h2>5. Seguridad</h2>
-  <p>Todos los datos se transmiten de forma cifrada mediante HTTPS.</p>
+  <h2>3. Servicios de terceros</h2>
+  <p>La App utiliza los siguientes servicios de terceros, cada uno con sus propias políticas de privacidad:</p>
 
-  <h2>6. Tus derechos</h2>
-  <p>Puedes solicitar la eliminación de tu cuenta y datos en cualquier momento contactándonos.</p>
+  <h3>3.1. Google AdMob (publicidad)</h3>
+  <p>Usamos Google AdMob para mostrar anuncios a usuarios que no tengan suscripción Premium activa. AdMob puede recopilar tu IDFA (iOS) o Advertising ID (Android) y datos de interacción con los anuncios para personalizar la publicidad y medir su efectividad. En dispositivos iOS, la App solicita tu consentimiento explícito mediante el diálogo estándar de <em>App Tracking Transparency (ATT)</em> antes de permitir este seguimiento. Puedes revocar este consentimiento en cualquier momento desde los Ajustes de tu dispositivo. Más información: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
 
-  <h2>7. Contacto</h2>
-  <p>Para cualquier consulta sobre privacidad: <strong>albionmultiapp@gmail.com</strong></p>
+  <h3>3.2. RevenueCat (gestión de suscripciones)</h3>
+  <p>Utilizamos RevenueCat para procesar y verificar tus suscripciones Premium. RevenueCat recibe tu identificador de usuario, estado de suscripción e información de la transacción (no datos de tu tarjeta de crédito). El pago en sí es procesado por Apple (en iOS) o Google (en Android), nunca por nosotros. Más información: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a>.</p>
+
+  <h3>3.3. Apple App Store / Google Play (procesamiento de pagos)</h3>
+  <p>Los pagos de suscripciones son procesados íntegramente por Apple (en iOS) o Google (en Android). No tenemos acceso a los datos de tu tarjeta de crédito ni información financiera. Más información: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Política de privacidad de Apple</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a>.</p>
+
+  <h3>3.4. Albion Online Data Project / API pública del juego</h3>
+  <p>Los datos de precios mostrados en el Comparador de precios provienen de la API pública de Albion Online Data Project y de la API oficial del juego. La App solo consume estos datos para mostrarlos al usuario; no se envían datos del usuario a estos servicios.</p>
+
+  <h2>4. Compartir información</h2>
+  <p>No vendemos, alquilamos ni compartimos tu información personal con terceros para fines de marketing. Tu información solo se comparte con los proveedores de servicios mencionados en la Sección 3, exclusivamente para los fines técnicos descritos (autenticación, pagos, publicidad).</p>
+
+  <h2>5. Almacenamiento y seguridad</h2>
+  <p>Los datos de tu cuenta (correo electrónico, contraseña hash, identificador de usuario) se almacenan en servidores de MongoDB Atlas alojados en infraestructura segura. Todas las comunicaciones entre la App y nuestro backend utilizan cifrado HTTPS/TLS.</p>
+  <p>Las contraseñas se almacenan como hashes criptográficos; nunca como texto plano. Ni siquiera el desarrollador puede ver tu contraseña original.</p>
+
+  <h2>6. Tus derechos y cómo ejercerlos</h2>
+
+  <h3>6.1. Eliminación de cuenta</h3>
+  <p>Puedes eliminar tu cuenta y todos los datos asociados directamente desde la App:</p>
+  <ol>
+    <li>Abre la App e inicia sesión.</li>
+    <li>Toca el ícono de perfil en la parte superior derecha de la pantalla principal.</li>
+    <li>Desplázate al final de la pantalla de perfil.</li>
+    <li>Toca <strong>"Eliminar cuenta"</strong> y confirma la acción.</li>
+  </ol>
+  <p>La eliminación es permanente e inmediata: se borran tu correo electrónico, contraseña hash, identificador de usuario y cualquier dato asociado de nuestra base de datos.</p>
+  <p>Si tienes una suscripción Premium activa, deberás cancelarla por separado desde los Ajustes de tu Apple ID (en iOS) o tu cuenta de Google Play (en Android). Apple y Google gestionan las suscripciones fuera de nuestro alcance.</p>
+  <p>Alternativamente, puedes solicitar la eliminación por correo a <strong>albionmultiapp@gmail.com</strong>.</p>
+
+  <h3>6.2. Acceso y corrección</h3>
+  <p>Puedes solicitar una copia de los datos que almacenamos sobre ti o corregir datos incorrectos escribiendo a <strong>albionmultiapp@gmail.com</strong>. Responderemos dentro de 30 días.</p>
+
+  <h3>6.3. Revocar consentimiento de seguimiento publicitario</h3>
+  <p>En iOS, puedes revocar el permiso de seguimiento publicitario en cualquier momento en: <em>Ajustes → Privacidad y seguridad → Seguimiento</em>. En Android: <em>Ajustes → Google → Anuncios</em>.</p>
+
+  <h2>7. Privacidad de menores</h2>
+  <p>La App no está dirigida a menores de 13 años. No recopilamos conscientemente información personal de menores de esta edad. Si descubrimos que hemos recopilado datos de un menor de 13 años sin el consentimiento verificable de un padre o tutor, eliminaremos esa información lo antes posible.</p>
+
+  <h2>8. Retención de datos</h2>
+  <p>Conservamos los datos de tu cuenta mientras esta exista. Tras la eliminación de cuenta, los datos personales se borran de nuestras bases de datos. Los registros de transacciones de suscripción pueden conservarse por períodos más largos según lo exijan las leyes fiscales y contables aplicables.</p>
+
+  <h2>9. Cambios a esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad ocasionalmente. La fecha de la última actualización aparece al inicio del documento. Los cambios significativos se comunicarán dentro de la App o por correo electrónico si estás registrado.</p>
+
+  <h2>10. Contacto</h2>
+  <div class="contact-box">
+    <p>Para cualquier consulta sobre esta Política de Privacidad, ejercer tus derechos o solicitar información:</p>
+    <p><strong>Correo:</strong> albionmultiapp@gmail.com</p>
+    <p><strong>Desarrollador:</strong> Eduardo Barrera Veloso (Vectors)</p>
+    <p><strong>Ubicación:</strong> Santiago, Chile</p>
+  </div>
+
+  <p class="disclaimer">Albion Multi App es una aplicación independiente creada por fans. No está afiliada, respaldada ni asociada con Sandbox Interactive GmbH ni con Albion Online. "Albion Online" es una marca registrada de Sandbox Interactive GmbH.</p>
+
 </body>
 </html>
